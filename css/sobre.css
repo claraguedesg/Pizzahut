@@ -1,0 +1,72 @@
+body{
+    background-color: rgb(244, 244, 245);
+}
+@font-face {
+    font-family: titulo;
+    src: url(../Fonte/BebasNeue-Regular.woff);
+}
+
+h1{
+    color: #096AB4;
+    font-size: 50px;
+    font-family: titulo;
+
+}
+.h2{
+    color: white;
+    background-color: #E82121;
+    font-size: 50px;
+}
+
+#tudo{
+    display: grid;
+    grid-template-areas: "topo topo"
+                         "nome nome"
+                         "img1 img1"
+                         "fim fim";
+    grid-auto-rows: minmax(100px,auto);
+    grid-auto-columns: minmax(300px,auto);
+}
+
+#topo{
+    grid-area: topo;
+    background-color: #096AB4;
+    background-image: url(../../imagem/carrinho.png),url(../../imagem/HotPizza.png), url(../../imagem/cardapio.png);
+    background-position:right, center ,left;
+    background-repeat:no-repeat;
+    background-size: 70px,90px,60px;
+    align-items: center;
+    
+}
+
+#nome{
+    grid-area: nome;
+    margin-bottom: 0px;
+    text-align: center;
+;
+}
+#img1{
+    background-color: blue;
+    height: 200px;
+    grid-area: img1;
+    margin-top: 40px;
+}
+p{
+    color: cornsilk;
+    font-size: 30px;
+}
+a{
+    text-align: center;
+    color: white;
+    grid-template-rows: 600px;
+    text-decoration: none;
+    padding-right: 60px;
+}
+#fim{
+    grid-area: fim;
+    background-color: #096AB4;
+    color: white;
+    font-family: titulo;
+    font-size: 40px;
+    margin-top: 80px;
+}
